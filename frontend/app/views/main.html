@@ -1,0 +1,369 @@
+<!-- <div class="jumbotron">
+  <h1>'Allo, 'Allo!</h1>
+  <p class="lead">
+    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
+    Always a pleasure scaffolding your apps.
+  </p>
+  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
+</div>
+
+<div class="row marketing">
+  <h4>HTML5 Boilerplate</h4>
+  <p>
+    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
+  </p>
+
+  <h4>Angular</h4>
+  <p>
+    AngularJS is a toolset for building the framework most suited to your application development.
+  </p>
+
+  <h4>Karma</h4>
+  <p>Spectacular Test Runner for JavaScript.</p>
+</div>
+ -->
+
+
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Sign</title>
+
+
+</head>
+<style type="text/css">
+  body{
+  }
+  .input-lg{
+    height: 37px;
+    border-radius: 0px;
+    margin-bottom: 10px;
+  }
+  .footer-above-input{
+    height: 30px;
+    text-indent: 12px;
+    /*margin-left: 15px;*/
+    margin: 0px 15px 15px 0px;
+    width: 206px;
+  }
+  .select-option{
+    height: 37px;
+    border-radius: 0px;
+  }
+  .athelet-form{
+    /*display: none;*/
+  }
+  .team-form{
+    /*display: none;*/
+  }
+  .company-form{
+    /*display: none;*/
+  }
+  .list-inline li,a{
+    color: #fff;
+  }
+  #contact{
+    background: url(images/sports1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+@media screen and (max-width: 580px) {
+.control-label{
+  width: 100%;
+}
+@media screen and (max-width: 480px) {
+.footer-above-input{
+  width: 100%;
+}
+  
+}
+</style>
+
+<body id="page-top" class="index">
+  <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+      </button>
+      <a class="navbar-brand" href="#page-top">
+         LOGO
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+          
+          <li class="">
+            <input type="text" name="email" placeholder="Email" style="width: 235px;height: 30px;margin-right: 10px; text-indent:12px;font-size:12px;margin-bottom:10px;">
+          </li>
+          <li class="">
+            <input type="password" name="password" placeholder="Password" style="width: 235px;height: 30px;margin-right: 10px;text-indent:12px;font-size:12px;margin-bottom:10px">
+          </li>
+          <li class="">
+            <button style="margin-right: 100px;height: 28px; border: 1px; ">sign up</button>
+          </li>
+          <p>
+          <li class="">
+            <a href="#" style="margin-left:-14px;margin-top:-9px;font-size:9px;margin-bottom: -18px;margin-left: 231px;">Forget Password?</a>
+          </li>
+          </p>
+      </ul>
+    </div>
+  </nav>
+    <section id="contact" style="margin-top:10px;">
+      <div class="row">
+          <div class="col-md-4"></div>
+          <div class="col-md-4" style="background-color: #EEE;">
+          <form class="form-horizontal" action="" method="POST">
+          <fieldset>
+            <div style="text-align: center;margin-top: 30px;">
+              <p>Be great at what you do</p>
+               <p style="font-size: 15px;">Get started - it's free.</p>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="accounttype">Account Type</label>
+              <select class="form-control select-option login-type">
+                <option value="1">Athlete</option>
+                <option value="2">Team</option>
+                <option value="3">Company</option>
+              </select>
+            </div>
+            <div class="athelet-form">
+              <div class="control-group">
+                <label class="control-label" for="username">Firstname</label>
+                <div class="controls">
+                  <input type="text" id="username" name="username" placeholder="" class="form-control input-lg">
+                </div>
+              </div>
+
+              <div class="control-group">
+                <label class="control-label" for="username">Lastname</label>
+                <div class="controls">
+                  <input type="text" id="username" name="username" placeholder="" class="form-control input-lg">
+                </div>
+              </div>
+           
+              <div class="control-group">
+                <label class="control-label" for="email">E-mail</label>
+                <div class="controls">
+                  <input type="email" id="email" name="email" placeholder="" class="form-control input-lg">
+                </div>
+              </div>
+
+              <div class="control-group">
+                <label class="control-label" for="email">Gender</label>
+                <div class="controls">
+                  <input type="radio" name="gender" value="male" checked> Male
+                  <input type="radio" name="gender" value="female"> Female
+                </div>
+              </div>
+
+              <div class="control-group">
+                <label class="control-label" for="dob">Date of Birth</label>
+                <div class="controls">
+                  <input type="text" id="datepicker" name="dob" class="form-control input-lg">
+                </div>
+              </div>
+           
+              <div class="control-group">
+                <label class="control-label" for="password">Password (6 or more characters)</label>
+                <div class="controls">
+                  <input type="password" id="password" name="password" placeholder="" class="form-control input-lg">
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label" for="country">Country</label>
+                <select class="form-control select-option">
+                  <option>Afghanistan</option>
+                  <option>Albania</option>
+                  <option>Algeria</option>
+                  <option> Andorra</option>
+                  <option>Bahamas</option>
+                  <option>Laos</option>
+                  <option>Latvia</option>
+                  <option>Liberia</option>
+                  <option>Libya</option>
+                  <option>Liechtenstein</option>    
+                  <option>Luxembourg</option>    
+                  <option>Philippines</option>
+                  <option>Poland</option>
+                  <option>Portugal</option>
+                </select>
+              </div>
+              <div class="control-group">
+                <label class="control-label" for="sports">Sports</label>
+                <select class="form-control select-option">
+                  <option>Athletics</option>
+                  <option>Canoeing</option>
+                  <option>Cycling</option>
+                  <option>Football</option>
+                  <option>Futsal</option>
+                  <option>Martial arts</option>
+                  <option>Motor sports</option>
+                  <option>Olympics</option>
+                  <option>Roller hockey</option>
+                  <option>Rowing</option>
+                  <option>Rugby union</option>
+                  <option>Table tennis</option>
+                  <option>Tennis</option>
+                  <option>Triathlon</option>
+                  <option>American football</option>
+                  <option>Water sports</option>
+                </select>
+              </div>
+            </div>
+            <div class="team-form">
+              <div class="control-group">
+                <label class="control-label" for="teamname">Team Name</label>
+                <div class="controls">
+                  <input type="text" id="teaname" name="teamname"  class="form-control input-lg">
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label" for="email">E-mail</label>
+                <div class="controls">
+                  <input type="email" id="email" name="email" placeholder="" class="form-control input-lg">
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label" for="password">Password (6 or more characters)</label>
+                <div class="controls">
+                  <input type="password" id="password" name="password" placeholder="" class="form-control input-lg">
+                </div>
+              </div>
+            </div>
+            <div class="company-form">
+              <div class="control-group">
+                <label class="control-label" for="teamname">Company Name</label>
+                <div class="controls">
+                  <input type="text" id="teaname" name="teamname"  class="form-control input-lg">
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label" for="email">E-mail</label>
+                <div class="controls">
+                  <input type="email" id="email" name="email" placeholder="" class="form-control input-lg">
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label" for="password">Password (6 or more characters)</label>
+                <div class="controls">
+                  <input type="password" id="password" name="password" placeholder="" class="form-control input-lg">
+                </div>
+              </div>
+            </div>
+            <div class="control-group">
+               <p style="font-size: 13px;margin-top: 10px;">By clicking Join now, you agree to Itbeezone's User Agreement,</p>
+               <p style="text-align: center;font-size: 13px;">Privacy Policy, and Cookie Policy.</p>
+            </div>
+
+            <div class="control-group">
+               <button class="join-btn" style="    width: 100%;height: 35px;margin-bottom: 25px;border: 1px solid #4CAF50; background-color:#4CAF50;color:#fff;">Join now</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>  
+    </section>
+
+  <footer class="text-center" style="margin-top: -60px;">
+      <div class="footer-above">
+        <div class="row">
+          <div class=" col-md-2">
+          </div>
+          <div class="col-md-8">
+            <label class="control-label" for="password">Find Athlete :</label>
+            <input type="text" name="firstname" placeholder="First name" class="footer-above-input">
+            <input type="text" name="secondname" placeholder="Second name" class="footer-above-input">
+            <button style="border: 1px; height: 29px;color: #000;margin-left:15px;">search</button>
+          </div>
+          <div class="col-md-2">
+          
+          </div>
+        </div>
+      </div>
+      <div class="footer-below">
+        <div class="row">
+          <div class="col-md-1"> </div>
+          <div class="col-md-10">
+              <ul class="list-inline">
+                    <li>
+                      <a href="#">Itbeezone© 2016</a>
+                    </li>
+                    <li>
+                        <a href="#">User Agreement</a>
+                    </li>
+                    <li>
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="#" >Community Guidelines</a>
+                    </li>
+                    <li>
+                        <a href="#" >Cookie Policy</a>
+                    </li>
+                    <li>
+                        <a href="#" >Guest Controls</a>
+                    </li>
+                    <li>
+                        <a href="#" >Language</a>
+                    </li>
+                </ul>
+          </div>
+          <div class="col-md-1"></div>
+      </div>
+      </div>
+  </footer>
+    
+
+</body>
+</html>
+
+<script type="text/javascript">
+$( document ).ready(function() {
+  if ($(".login-type").val() == 1){
+    $(".athelet-form").css("display","block");
+    $(".team-form").css("display","none");
+    $(".company-form").css("display","none");
+    $(".athelet-form :input").attr('disabled', false);
+    $(".team-form :input").attr('disabled', true);
+    $(".company-form :input").attr('disabled', true);
+  }
+
+
+  $(".login-type").change(function(){
+    console.log("login-type change");
+    console.log($(".login-type").val());
+    if ($(".login-type").val() == 1){
+      $(".athelet-form").css("display","block");
+      $(".team-form").css("display","none");
+      $(".company-form").css("display","none");
+      $(".athelet-form :input").attr('disabled', false);
+      $(".team-form :input").attr('disabled', true);
+      $(".company-form :input").attr('disabled', true);
+    }else if($(".login-type").val() == 2){
+      $(".team-form").css("display","block");
+      $(".athelet-form").css("display","none");
+      $(".company-form").css("display","none");
+      $(".team-form :input").attr('disabled', false);
+      $(".athelet-form :input").attr('disabled', true);
+      $(".company-form :input").attr('disabled', true);
+    }else if($(".login-type").val() == 3){
+      $(".company-form").css("display","block");
+      $(".team-form").css("display","none");
+      $(".athelet-form").css("display","none");
+      $(".company-form :input").attr('disabled', false);
+      $(".team-form :input").attr('disabled', true);
+      $(".athelet-form :input").attr('disabled', true);
+    }
+  });
+
+});
+</script>
